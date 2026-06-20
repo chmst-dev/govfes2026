@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ガバフェス2026 | 明治大学ガバナンス研究科</title>
+  <meta name="description" content="ガバフェス2026「つなぐ」— 2026年10月18日（日）明治大学アカデミーコモン。修了生・現役生・教員が集い、未来・世代・地域・テクノロジーをつなぐ対話の場。" />
+  <meta property="og:title" content="ガバフェス2026 | つなぐ" />
+  <meta property="og:description" content="2026年10月18日（日）開催。明治大学ガバナンス研究科 同窓・現役・教員の祭典。" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== ナビゲーション ==================== -->
+  <nav class="nav" role="navigation" aria-label="メインナビゲーション">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="ガバフェス2026 トップへ">
+        <img src="logo_site.svg" alt="Gocfes2026 ロゴ" />
+      </a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#overview"   id="nav-overview">開催概要</a></li>
+        <li><a href="#program"    id="nav-program">プログラム</a></li>
+        <li><a href="#apply"      id="nav-apply">参加要項</a></li>
+        <li><a href="#organizers" id="nav-organizers">幹事</a></li>
+      </ul>
+      <button
+        class="nav__hamburger"
+        id="hamburger"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== ヒーロー ==================== -->
+  <section id="hero" class="hero" aria-label="メインビジュアル">
+
+    <!-- 背景：アカデミーコモン建物 -->
+    <div class="hero__bg" aria-hidden="true">
+      <img src="acacomo.avif" alt="" />
+    </div>
+
+    <div class="hero__content">
+      <span class="hero__year">Meiji University · Graduate School of Governance Studies · 2026</span>
+
+      <h1 class="hero__title">ガバフェス<br/>2026</h1>
+
+      <p class="hero__theme">つなぐ</p>
+
+      <div class="hero__concepts" role="list" aria-label="つながりのキーワード">
+        <span class="hero__concept-tag" role="listitem">未来へつなぐ</span>
+        <span class="hero__concept-tag" role="listitem">世代をつなぐ</span>
+        <span class="hero__concept-tag" role="listitem">地域をつなぐ</span>
+        <span class="hero__concept-tag" role="listitem">テクノロジーと人間をつなぐ</span>
+      </div>
+
+      <p class="hero__desc">
+        修了生・現役生・教員がそれぞれの経験や知見を持ち寄り、<br class="pc-only" />
+        これからの社会・地域・公共政策について対話する場。
+      </p>
+
+      <div class="hero__meta" role="list" aria-label="開催基本情報">
+        <div class="hero__meta-item" role="listitem">
+          <span class="hero__meta-icon" aria-hidden="true">📅</span>
+          <span>2026年10月18日（日）</span>
+        </div>
+        <div class="hero__meta-item" role="listitem">
+          <span class="hero__meta-icon" aria-hidden="true">🕐</span>
+          <span>11:00〜19:00</span>
+        </div>
+        <div class="hero__meta-item" role="listitem">
+          <span class="hero__meta-icon" aria-hidden="true">📍</span>
+          <span>明治大学 アカデミーコモン 2階ホール</span>
+        </div>
+      </div>
+
+      <!-- カウントダウン -->
+      <div
+        id="countdown"
+        style="margin-top:48px; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;"
+        aria-label="開催まであと"
+      >
+        <div style="text-align:center;">
+          <div id="cd-days" style="font-size:clamp(2rem,6vw,3.5rem);font-weight:900;color:#fff;font-family:'Noto Serif JP',serif;line-height:1;">000</div>
+          <div style="font-size:0.7rem;letter-spacing:0.12em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-top:4px;">Days</div>
+        </div>
+        <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;align-self:flex-start;padding-top:8px;">:</div>
+        <div style="text-align:center;">
+          <div id="cd-hours" style="font-size:clamp(2rem,6vw,3.5rem);font-weight:900;color:#fff;font-family:'Noto Serif JP',serif;line-height:1;">00</div>
+          <div style="font-size:0.7rem;letter-spacing:0.12em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-top:4px;">Hours</div>
+        </div>
+        <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;align-self:flex-start;padding-top:8px;">:</div>
+        <div style="text-align:center;">
+          <div id="cd-minutes" style="font-size:clamp(2rem,6vw,3.5rem);font-weight:900;color:#fff;font-family:'Noto Serif JP',serif;line-height:1;">00</div>
+          <div style="font-size:0.7rem;letter-spacing:0.12em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-top:4px;">Min</div>
+        </div>
+        <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;align-self:flex-start;padding-top:8px;">:</div>
+        <div style="text-align:center;">
+          <div id="cd-seconds" style="font-size:clamp(2rem,6vw,3.5rem);font-weight:900;color:#4caf7d;font-family:'Noto Serif JP',serif;line-height:1;">00</div>
+          <div style="font-size:0.7rem;letter-spacing:0.12em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-top:4px;">Sec</div>
+        </div>
+      </div>
+
+      <!-- めいじろうマスコット（ヒーロー内・インライン表示） -->
+      <div class="hero__mascot-wrap" aria-hidden="true">
+        <div class="hero__mascot-circle">
+          <img
+            src="meijiro.avif"
+            alt="明治大学マスコット めいじろう"
+            class="hero__mascot-img"
+          />
+        </div>
+        <p class="hero__mascot-label">めいじろう も応援中！</p>
+      </div>
+
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ==================== 開催概要 ==================== -->
+  <section id="overview" class="section" aria-labelledby="overview-heading">
+    <div class="container">
+      <span class="section-label reveal">開催概要</span>
+      <h2 class="section-title reveal" id="overview-heading">イベント情報</h2>
+      <p class="section-desc reveal">
+        ガバナンス研究科の修了生・現役生・教員が一堂に会する年次イベントです。
+      </p>
+
+      <div class="overview__grid">
+
+        <article class="overview__card reveal reveal-delay-1">
+          <div class="overview__card-icon" aria-hidden="true">📅</div>
+          <div class="overview__card-label">日時</div>
+          <div class="overview__card-value">
+            2026年10月18日（日）<br/>
+            11:00〜19:00
+          </div>
+          <div class="overview__card-note">
+            第一部：11:00〜16:50<br/>
+            第二部（懇親会）：17:00〜19:00
+          </div>
+        </article>
+
+        <article class="overview__card reveal reveal-delay-2">
+          <div class="overview__card-icon" aria-hidden="true">📍</div>
+          <div class="overview__card-label">会場</div>
+          <div class="overview__card-value">
+            明治大学<br/>
+            アカデミーコモン 2階ホール
+          </div>
+          <div class="overview__card-note">
+            〒101-8301 東京都千代田区神田駿河台1-1
+          </div>
+        </article>
+
+        <article class="overview__card reveal reveal-delay-3">
+          <div class="overview__card-icon" aria-hidden="true">👥</div>
+          <div class="overview__card-label">対象</div>
+          <div class="overview__card-value">
+            修了生・現役生・教員・関係者
+          </div>
+          <div class="overview__card-note">
+            第一部は一般参加も可能<br/>
+            第二部は現役生・OBOGのみ
+          </div>
+        </article>
+
+        <article class="overview__card reveal reveal-delay-4">
+          <div class="overview__card-icon" aria-hidden="true">🏛️</div>
+          <div class="overview__card-label">主催</div>
+          <div class="overview__card-value">
+            明治大学<br/>
+            ガバナンス研究科
+          </div>
+          <div class="overview__card-note">
+            修了生・在校生・教員 合同幹事チーム
+          </div>
+        </article>
+
+      </div>
+
+      <!-- 会場写真 -->
+      <div class="venue-image reveal" style="margin-top:48px;">
+        <img src="acacomo.avif" alt="明治大学アカデミーコモン外観" loading="lazy" />
+        <div class="venue-image__caption">
+          📍 明治大学 アカデミーコモン — 千代田区神田駿河台
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== プログラム ==================== -->
+  <section id="program" class="section section--alt" aria-labelledby="program-heading">
+    <div class="container">
+      <span class="section-label reveal">プログラム</span>
+      <h2 class="section-title reveal" id="program-heading">タイムスケジュール</h2>
+      <p class="section-desc reveal">
+        パネルディスカッション・ワークショップ・懇親会の3部構成でお届けします。
+      </p>
+
+      <div class="timeline reveal">
+
+        <!-- 第一部 第一幕 -->
+        <div class="timeline__group">
+          <div class="timeline__group-label">第一部 第一幕</div>
+
+          <div class="timeline__item">
+            <div class="timeline__time">11:00〜12:00</div>
+            <div class="timeline__body">
+              <div class="timeline__title">
+                開会・登壇・パネルディスカッション
+                <span class="timeline__badge timeline__badge--open">一般参加可</span>
+              </div>
+              <div class="timeline__note">
+                開会挨拶のあと、登壇者によるパネルディスカッションを行います。
+                社会・地域・公共政策をテーマに、多様な経験・知見を持ち寄ります。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 昼休憩 -->
+        <div class="timeline__group">
+          <div class="timeline__group-label" style="background: rgba(90,117,102,0.85);">
+            昼休憩
+          </div>
+          <div class="timeline__item" style="opacity:0.7;">
+            <div class="timeline__time">12:00〜13:00</div>
+            <div class="timeline__body">
+              <div class="timeline__title">昼食休憩</div>
+              <div class="timeline__note">各自昼食・自由交流</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第一部 第二幕 -->
+        <div class="timeline__group">
+          <div class="timeline__group-label">第一部 第二幕</div>
+
+          <div class="timeline__item">
+            <div class="timeline__time">13:00〜16:00</div>
+            <div class="timeline__body">
+              <div class="timeline__title">
+                ワークショップ
+                <span class="timeline__badge timeline__badge--open">一般参加可</span>
+              </div>
+              <div class="timeline__note">
+                グループに分かれてテーマごとに対話・ワークショップを行います。<br/>
+                「未来へつなぐ」「世代をつなぐ」「地域をつなぐ」「テクノロジーと人間をつなぐ」
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__time">16:15〜16:50</div>
+            <div class="timeline__body">
+              <div class="timeline__title">
+                発表・共有
+                <span class="timeline__badge timeline__badge--closed">参加者対象</span>
+              </div>
+              <div class="timeline__note">
+                各ワークショップの成果を全体に発表・共有します。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第二部 -->
+        <div class="timeline__group">
+          <div class="timeline__group-label" style="background: linear-gradient(135deg, #1e6b3e, #2e9458);">
+            第二部
+          </div>
+          <div class="timeline__item" style="border-color: rgba(76,175,125,0.3);">
+            <div class="timeline__time">17:00〜19:00</div>
+            <div class="timeline__body">
+              <div class="timeline__title">
+                懇親会
+                <span class="timeline__badge timeline__badge--closed">現役生・OBOG限定</span>
+              </div>
+              <div class="timeline__note">
+                修了生・現役生・教員が集まる懇親パーティー。
+                世代を超えたつながりを深める場です。
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 参加要項 ==================== -->
+  <section id="apply" class="section" aria-labelledby="apply-heading">
+    <div class="container">
+      <span class="section-label reveal">参加要項</span>
+      <h2 class="section-title reveal" id="apply-heading">参加費・申込方法</h2>
+      <p class="section-desc reveal">
+        第一部は一般参加も受け付けます。第二部（懇親会）は修了生・現役生限定です。
+      </p>
+
+      <div class="fee__grid">
+
+        <article class="fee__card fee__card--part1 reveal reveal-delay-1">
+          <div class="fee__part-label">PART 1</div>
+          <div class="fee__part-name">第一部<br/>シンポジウム＆ワークショップ</div>
+          <div class="fee__amount">¥1,000<span>/人</span></div>
+          <ul class="fee__details" style="padding-left:0; list-style:none;">
+            <li>✓ 開会・パネルディスカッション</li>
+            <li>✓ ワークショップ（13:00〜16:00）</li>
+            <li>✓ 発表・共有（16:15〜16:50）</li>
+            <li style="margin-top:8px; opacity:0.9;">🌐 一般参加可能</li>
+          </ul>
+        </article>
+
+        <article class="fee__card fee__card--part2 reveal reveal-delay-2">
+          <div class="fee__part-label">PART 2</div>
+          <div class="fee__part-name">第二部<br/>懇親会</div>
+          <div class="fee__amount">¥5,000<span>/人</span></div>
+          <ul class="fee__details" style="padding-left:0; list-style:none;">
+            <li>✓ 懇親パーティー（17:00〜19:00）</li>
+            <li>✓ 飲食費込み</li>
+            <li>✓ 修了生・現役生・教員対象</li>
+            <li style="margin-top:8px; opacity:0.9;">🔒 現役生・OBOGのみ</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="apply__box reveal">
+        <div class="apply__title">参加申込</div>
+        <p class="apply__note">
+          申込フォームは現在準備中です。準備でき次第、こちらからご案内します。<br/>
+          今しばらくお待ちください。
+        </p>
+        <button
+          class="btn btn--disabled"
+          id="apply-btn"
+          disabled
+          aria-disabled="true"
+          title="申込フォームは近日公開予定"
+        >
+          🔒&ensp;申込フォーム（近日公開）
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 幹事 ==================== -->
+  <section id="organizers" class="section section--alt" aria-labelledby="organizers-heading">
+    <div class="container">
+      <span class="section-label reveal">幹事</span>
+      <h2 class="section-title reveal" id="organizers-heading">運営チーム</h2>
+      <p class="section-desc reveal" style="margin-bottom:48px;">
+        修了生・在校生・教員が協力してガバフェス2026を運営します。
+      </p>
+
+      <!-- 修了生・在校生 -->
+      <div class="organizers__group-title reveal">修了生・在校生</div>
+      <div class="organizers__grid" role="list" aria-label="修了生・在校生 幹事一覧">
+
+        <div class="organizer__card reveal reveal-delay-1" role="listitem">
+          <div class="organizer__name">高橋 一之</div>
+          <span class="organizer__cohort">14.5期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-2" role="listitem">
+          <div class="organizer__name">加藤 カヨ</div>
+          <span class="organizer__cohort">12.5期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-3" role="listitem">
+          <div class="organizer__name">遠藤 恭子</div>
+          <span class="organizer__cohort">17期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-4" role="listitem">
+          <div class="organizer__name">松澤 侑大</div>
+          <span class="organizer__cohort">17期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-1" role="listitem">
+          <div class="organizer__name">土田 章</div>
+          <span class="organizer__cohort">18.5期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-2" role="listitem">
+          <div class="organizer__name">越智 聖人</div>
+          <span class="organizer__cohort">19期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-3" role="listitem">
+          <div class="organizer__name">千代 若奈</div>
+          <span class="organizer__cohort">19期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-4" role="listitem">
+          <div class="organizer__name">山田 さとみ</div>
+          <span class="organizer__cohort">19期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-1" role="listitem">
+          <div class="organizer__name">亀若 智洋</div>
+          <span class="organizer__cohort">19.5期</span>
+        </div>
+
+        <div class="organizer__card reveal reveal-delay-2" role="listitem">
+          <div class="organizer__name">畠山 直子</div>
+          <span class="organizer__cohort">19.5期</span>
+        </div>
+
+      </div><!-- /.organizers__grid -->
+
+      <!-- 担当教員 -->
+      <div class="organizers__group-title reveal" style="margin-top:8px;">担当教員</div>
+      <div class="organizers__grid" role="list" aria-label="担当教員一覧">
+
+        <div class="organizer__card organizer__card--faculty reveal reveal-delay-1" role="listitem">
+          <div class="organizer__name">大山 典宏</div>
+          <div class="organizer__title">専任教授 ／ 専門職大学院委員</div>
+        </div>
+
+      </div>
+
+      <!-- めいじろう PR -->
+      <div class="reveal" style="margin-top:40px; text-align:center;">
+        <img
+          src="meijiro.avif"
+          alt="明治大学マスコット めいじろう"
+          style="width:80px; height:auto; margin:0 auto; filter:drop-shadow(0 4px 12px rgba(46,139,87,0.3));"
+          loading="lazy"
+        />
+        <p style="margin-top:12px; font-size:0.85rem; color:var(--color-text-muted);">
+          明治大学マスコットキャラクター「めいじろう」も応援しています！
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== フッター ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">ガバ<span>フェス</span>2026</div>
+          <div class="footer__tagline">「つなぐ」— Connecting People, Ideas &amp; Futures</div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__info-item">📅 2026年10月18日（日）</div>
+          <div class="footer__info-item">📍 明治大学 アカデミーコモン 2階ホール</div>
+          <div class="footer__info-item">🕐 11:00〜19:00</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copy">
+          © 2026 明治大学ガバナンス研究科 ガバフェス2026 幹事チーム
+        </div>
+        <ul class="footer__links" role="list">
+          <li><a href="#overview">開催概要</a></li>
+          <li><a href="#program">プログラム</a></li>
+          <li><a href="#apply">参加要項</a></li>
+          <li><a href="#organizers">幹事</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
