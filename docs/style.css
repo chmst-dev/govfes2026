@@ -759,6 +759,7 @@ a  { color: inherit; text-decoration: none; }
 
 .session-card__photo {
   width: 120px;
+  height: 120px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center top;
@@ -854,6 +855,7 @@ a  { color: inherit; text-decoration: none; }
 
   .session-card__photo {
     width: 88px;
+    height: 88px;
   }
 
   .session-card__type {
@@ -872,6 +874,7 @@ a  { color: inherit; text-decoration: none; }
 
   .session-card__photo {
     width: 104px;
+    height: 104px;
   }
 }
 
