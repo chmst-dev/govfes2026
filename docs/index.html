@@ -28,8 +28,7 @@
       <ul class="nav__links" id="nav-links" role="list">
         <li><a href="#overview"   id="nav-overview">開催概要</a></li>
         <li><a href="#program"    id="nav-program">プログラム</a></li>
-        <li><a href="#apply"      id="nav-apply">参加要項</a></li>
-        <li><a href="#organizers" id="nav-organizers">幹事</a></li>
+        <li><a href="#apply"      id="nav-apply">参加する</a></li>
       </ul>
       <button
         class="nav__hamburger"
@@ -75,7 +74,7 @@
       <div class="hero__invite">
         <span class="hero__invite-badge">一般参加歓迎</span>
         <p class="hero__invite-text">
-          本イベントの第一部（シンポジウム・分科会）は、一般の皆様もご参加いただけます。<br/>
+          本イベントの第一部（シンポジウム・ワークショップ・分科会）は、一般の皆様もご参加いただけます。<br/>
           公共政策や地域活性化、社会課題の解決にご興味のある方は、ぜひお気軽にお越しください！
         </p>
       </div>
@@ -147,7 +146,7 @@
             11:00〜19:00
           </div>
           <div class="overview__card-note">
-            第一部（シンポジウム・分科会）：11:00〜16:50<br/>
+            第一部（シンポジウム・ワークショップ・分科会）：11:00〜16:50<br/>
             第二部（懇親会）：17:00〜19:00
           </div>
         </article>
@@ -161,7 +160,7 @@
           </div>
           <div class="overview__card-note">
             明治大学 駿河台キャンパス<br/>
-            第一部（シンポジウム・分科会）：グローバルフロント<br/>
+            第一部（シンポジウム・ワークショップ・分科会）：グローバルフロント<br/>
             第二部（懇親会）：リバティタワー
           </div>
         </article>
@@ -209,8 +208,13 @@
       <span class="section-label reveal">プログラム</span>
       <h2 class="section-title reveal" id="program-heading">タイムスケジュール</h2>
       <p class="section-desc reveal">
-        パネルディスカッション・分科会・懇親会の3部構成でお届けします。
+        パネルディスカッション・ワークショップ・分科会（講義形式）・懇親会でお届けします。
       </p>
+
+      <div class="program-notice reveal" role="note" aria-label="プログラムに関する注意事項">
+        <p>※パネルディスカッション、ワークショップ、分科会の内容は現時点の予定であり、今後変更となる場合があります。</p>
+        <p>※ワークショップ・分科会は、申込状況や会場運営、プログラム進行上の都合により参加者を調整する場合があります。会場に空席がある場合でも、ご希望に添えないことがあります。</p>
+      </div>
 
       <div class="timeline reveal">
 
@@ -226,8 +230,31 @@
                 <span class="timeline__badge timeline__badge--open">一般参加可</span>
               </div>
               <div class="timeline__note">
-                開会挨拶のあと、登壇者によるパネルディスカッションを行います。
-                社会・地域・公共政策をテーマに、多様な経験・知見を持ち寄ります。
+                開会挨拶のあと、ガバナンス研究科の前研究科長・長畑誠教授と、現研究科長・湯淺墾道教授によるパネルディスカッションを行います。
+              </div>
+
+              <div class="panel-discussion">
+                <div class="panel-discussion__speakers" role="list" aria-label="パネルディスカッション登壇者">
+                  <article class="panel-speaker" role="listitem">
+                    <img class="panel-speaker__photo" src="nagahata-makoto.jpg" alt="長畑誠教授" loading="lazy" />
+                    <div>
+                      <h3 class="panel-speaker__name">長畑 誠 教授</h3>
+                      <p class="panel-speaker__role">前研究科長</p>
+                    </div>
+                  </article>
+                  <article class="panel-speaker" role="listitem">
+                    <img class="panel-speaker__photo" src="yuasa-kendo.png" alt="湯淺墾道教授" loading="lazy" />
+                    <div>
+                      <h3 class="panel-speaker__name">湯淺 墾道 教授</h3>
+                      <p class="panel-speaker__role">現研究科長</p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="panel-discussion__topics">
+                  <p class="panel-discussion__status">タイトル未定</p>
+                  <p>「つなぐ」を軸に、近未来の社会やテクノロジー、ガバナンス研究科のこれまでとこれからについて、前・現研究科長の視点から対話いただく予定です。</p>
+                </div>
               </div>
             </div>
           </div>
@@ -255,11 +282,11 @@
             <div class="timeline__time">13:00〜16:00</div>
             <div class="timeline__body">
               <div class="timeline__title">
-                分科会（ワークショップ形式・講義形式）
+                ワークショップ・分科会（講義形式）
                 <span class="timeline__badge timeline__badge--open">一般参加可</span>
               </div>
               <div class="timeline__note">
-                ワークショップ形式と講義形式の分科会を並行して開催します。<br/>
+                ワークショップと講義形式の分科会を並行して開催します。<br/>
                 テーマ例：「未来へつなぐ」「世代をつなぐ」「地域をつなぐ」「テクノロジーと人間をつなぐ」など
               </div>
             </div>
@@ -273,7 +300,7 @@
                 <span class="timeline__badge timeline__badge--closed">参加者対象</span>
               </div>
               <div class="timeline__note">
-                各分科会の成果を全体に発表・共有します。
+                各ワークショップ・分科会の成果を全体に発表・共有します。
               </div>
             </div>
           </div>
@@ -301,38 +328,79 @@
 
       </div>
 
-      <!-- 分科会 担当予定者一覧 -->
+      <!-- ワークショップ・分科会（講義形式）一覧 -->
       <div class="sessions-info reveal" style="margin-top:48px;">
         <div class="sessions-info__header">
-          <h3 class="sessions-info__title">分科会 担当予定者（現時点での予定）</h3>
-          <p class="sessions-info__note">※担当者や分科会は今後追加・変更となる場合があります。</p>
+          <h3 class="sessions-info__title">ワークショップ・分科会（講義形式）</h3>
+          <p class="sessions-info__note">※担当者や内容は現時点の予定です。</p>
         </div>
 
         <div class="sessions-info__grid">
-          <!-- ワークショップ形式 -->
-          <div class="session-card">
-            <div class="session-card__type">
-              <span>ワークショップ形式</span>
+          <article class="session-card">
+            <img class="session-card__photo" src="nagahata-makoto.jpg" alt="長畑誠教授" loading="lazy" />
+            <div class="session-card__content">
+              <div class="session-card__type"><span>ワークショップ</span></div>
+              <h4 class="session-card__teacher">長畑 誠 教授</h4>
+              <p class="session-card__pending">テーマ未定</p>
             </div>
-            <ul class="session-card__list" role="list" aria-label="ワークショップ形式 担当予定者">
-              <li>長畑 誠 教授</li>
-              <li>西出 順郎 教授</li>
-              <li>米原 あき 教授</li>
-              <li>源 由理子 先生</li>
-            </ul>
-          </div>
+          </article>
 
-          <!-- 講義形式 -->
-          <div class="session-card">
-            <div class="session-card__type">
-              <span>講義形式</span>
-              <span class="session-card__status">準備中</span>
+          <article class="session-card">
+            <img class="session-card__photo" src="nishide-junro.jpg" alt="西出順郎教授" loading="lazy" />
+            <div class="session-card__content">
+              <div class="session-card__type"><span>ワークショップ</span></div>
+              <h4 class="session-card__teacher">西出 順郎 教授</h4>
+              <p class="session-card__label">タイトル</p>
+              <h5 class="session-card__theme">その政策、正しいから選ぶのか？ 得だから選ぶのか？</h5>
+              <p class="session-card__label">概要</p>
+              <p class="session-card__summary">政策決定の根拠は「規範」と「便益」のどちらにあるのでしょうか。本ワークショップでは、模擬事例を通じて両者の緊張関係を体感し、実際の政策論争にも適用できる分析の視点と枠組みを皆で考えます。</p>
             </div>
-            <ul class="session-card__list" role="list" aria-label="講義形式 担当予定者">
-              <li>出雲 明子 教授</li>
-              <li>松浦 正浩 教授</li>
-            </ul>
-          </div>
+          </article>
+
+          <article class="session-card">
+            <img class="session-card__photo" src="yonehara-aki.jpg" alt="米原あき教授" loading="lazy" />
+            <div class="session-card__content">
+              <div class="session-card__type"><span>ワークショップ</span></div>
+              <h4 class="session-card__teacher">米原 あき 教授</h4>
+              <p class="session-card__label">テーマ</p>
+              <h5 class="session-card__theme">「その価値は、測れますか？」<span>～その政策（事業・プロジェクト）が生み出した価値を、地域や次世代につなぐために～</span></h5>
+              <p class="session-card__label">概要</p>
+              <p class="session-card__summary">政策評価やEBPMの普及に伴い、事業等の価値を可視化することへの関心が高まっています。本企画では、その価値を地域や次世代へつなぐ方法を事例から学び、議論を通じてガバナンス研究科での学びの価値を可視化します。</p>
+            </div>
+          </article>
+
+          <article class="session-card">
+            <img class="session-card__photo" src="minamoto-yuriko.png" alt="源由理子先生" loading="lazy" />
+            <div class="session-card__content">
+              <div class="session-card__type"><span>ワークショップ</span></div>
+              <h4 class="session-card__teacher">源 由理子 先生</h4>
+              <p class="session-card__label">テーマ</p>
+              <h5 class="session-card__theme">「“つながる”とは何か？～その本質を探る」</h5>
+              <p class="session-card__label">概要</p>
+              <p class="session-card__summary">今年のガバフェスのテーマは「つなぐ」です。でも、そもそも社会で「つながること」とはいつも善いことなのでしょうか。このセッションでは、皆さんの多様な体験を振り返りつつ、「つながること」の本質を探る哲学対話を試みます。</p>
+            </div>
+          </article>
+
+          <article class="session-card">
+            <img class="session-card__photo" src="izumo-akiko.jpg" alt="出雲明子教授" loading="lazy" />
+            <div class="session-card__content">
+              <div class="session-card__type"><span>分科会（講義形式）</span></div>
+              <h4 class="session-card__teacher">出雲 明子 教授</h4>
+              <p class="session-card__label">テーマ</p>
+              <h5 class="session-card__theme">公務人材の不足と解決に向けて</h5>
+              <p class="session-card__label">概要</p>
+              <p class="session-card__summary">住民ニーズの多様化や公共政策の制度や提供方法の複雑化により、公務での業務量の量的、質的増加や人材不足が指摘される。公務員の専門性の向上、行政組織の効率的な運営、人材確保などでの有効な方法とは？</p>
+            </div>
+          </article>
+
+          <article class="session-card">
+            <img class="session-card__photo" src="matsuura-masahiro.jpg" alt="松浦正浩教授" loading="lazy" />
+            <div class="session-card__content">
+              <div class="session-card__type"><span>分科会（講義形式）</span></div>
+              <h4 class="session-card__teacher">松浦 正浩 教授</h4>
+              <p class="session-card__pending">テーマ未定</p>
+            </div>
+          </article>
         </div>
       </div>
 
@@ -352,12 +420,12 @@
 
         <article class="fee__card fee__card--part1 reveal reveal-delay-1">
           <div class="fee__part-label">PART 1</div>
-          <div class="fee__part-name">第一部<br/>シンポジウム＆分科会</div>
+          <div class="fee__part-name">第一部<br/>シンポジウム＆ワークショップ・分科会</div>
           <div class="fee__amount">¥1,000<span>/人</span></div>
           <ul class="fee__details" style="padding-left:0; list-style:none;">
             <li>✓ 会場：グローバルフロント</li>
             <li>✓ 開会・パネルディスカッション</li>
-            <li>✓ 分科会（ワークショップ・講義形式／13:00〜16:00）</li>
+            <li>✓ ワークショップ・分科会（講義形式／13:00〜16:00）</li>
             <li>✓ 発表・共有（16:15〜16:50）</li>
             <li style="margin-top:8px; opacity:0.9;">🌐 一般参加可能</li>
           </ul>
@@ -463,9 +531,9 @@
 
       </div><!-- /.organizers__grid -->
 
-      <!-- 担当教員 -->
-      <div class="organizers__group-title reveal" style="margin-top:8px;">担当教員</div>
-      <div class="organizers__grid" role="list" aria-label="担当教員一覧">
+      <!-- 担当教員（顧問） -->
+      <div class="organizers__group-title reveal" style="margin-top:8px;">担当教員（顧問）</div>
+      <div class="organizers__grid" role="list" aria-label="担当教員（顧問）一覧">
 
         <div class="organizer__card organizer__card--faculty reveal reveal-delay-1" role="listitem">
           <div class="organizer__name">大山 典宏</div>
@@ -498,7 +566,7 @@
         <ul class="footer__links" role="list">
           <li><a href="#overview">開催概要</a></li>
           <li><a href="#program">プログラム</a></li>
-          <li><a href="#apply">参加要項</a></li>
+          <li><a href="#apply">参加する</a></li>
           <li><a href="#organizers">幹事</a></li>
         </ul>
       </div>
