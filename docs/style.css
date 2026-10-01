@@ -1092,6 +1092,74 @@ a  { color: inherit; text-decoration: none; }
   margin-top: 2px;
 }
 
+/* ---------- 関連資料・校歌 ---------- */
+.school-song {
+  margin-top: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.school-song__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  color: var(--color-primary-dk);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  border-radius: var(--radius-md);
+}
+
+.school-song__toggle::-webkit-details-marker { display: none; }
+.school-song__toggle:hover { background: var(--color-bg); }
+.school-song__toggle:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.school-song__show,
+.school-song__hide { flex-shrink: 0; font-size: 0.8rem; }
+.school-song__hide,
+.school-song[open] .school-song__show { display: none; }
+.school-song[open] .school-song__hide { display: inline; }
+
+.school-song__body {
+  padding: 24px clamp(16px, 4vw, 32px) 32px;
+  border-top: 1px solid var(--color-border);
+}
+
+.school-song__credits,
+.school-song__source {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.school-song__verses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 32px;
+  margin: 28px 0;
+}
+
+.school-song__verse h3 {
+  margin-bottom: 12px;
+  color: var(--color-primary-dk);
+  font-size: 1rem;
+}
+
+.school-song__verse p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 2.2;
+  overflow-wrap: anywhere;
+}
+
+.school-song__source a { text-decoration: underline; }
+
 /* ---------- フッター ---------- */
 .footer {
   background: var(--color-navy);
@@ -1153,6 +1221,7 @@ a  { color: inherit; text-decoration: none; }
 
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   list-style: none;
 }
